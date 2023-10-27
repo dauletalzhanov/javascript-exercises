@@ -12,7 +12,6 @@ const reverseString = function(word) {
 
 };
 
-reverseString('potato')
 
 // Do not edit below this line
 module.exports = reverseString;
