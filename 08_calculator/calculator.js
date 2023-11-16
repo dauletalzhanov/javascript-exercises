@@ -1,24 +1,42 @@
-const add = function() {
+const add = function(n1, n2) {
+	return n1 + n2
+}
+
+const subtract = function(n1, n2) {
+	return n1 - n2
+};
+
+const sum = function(arra) {
+	suum = 0
+	for (let i = 0; i < arra.length; i++) {
+		suum += arra[i]
+	}
+	return suum
 	
 };
 
-const subtract = function() {
-	
+const multiply = function(arra) {
+	suum = 1
+
+	for (let i = 0; i < arra.length; i++){
+		suum *= arra[i]
+	}
+
+	return suum
 };
 
-const sum = function() {
-	
+const power = function(n1, n2) {
+	return n1 ** n2
 };
 
-const multiply = function() {
+const factorial = function(n) {
+	if (n <= 1 ) {
+		return 1
+	}
 
-};
+	let nn = n
 
-const power = function() {
-	
-};
-
-const factorial = function() {
+	return nn * factorial(n - 1)
 	
 };
 
@@ -31,3 +49,5 @@ module.exports = {
   power,
   factorial
 };
+
+console.log(factorial(5))
